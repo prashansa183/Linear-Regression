@@ -13,7 +13,7 @@ from sklearn import linear_model
 reg=linear_model.LinearRegression()
 reg.fit(x_train,y_train)
 y_pred=reg.predict(x_test)
- #y_1pred=f"{y_pred:.5f}"
+
 score_test=reg.score(x_test,y_pred)
 score_test
 print(y_pred)
